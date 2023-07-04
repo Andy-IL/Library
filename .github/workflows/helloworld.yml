@@ -35,7 +35,7 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello, world from library YML!
-          echo ${{  username }}
+          echo ${{  inputs.username }}
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
