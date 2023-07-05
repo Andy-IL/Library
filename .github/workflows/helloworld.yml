@@ -42,3 +42,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Run a called sh script
+        run: |
+          echo Running shell script
+          chmod 700 ${{ github.action_path }}/helloworld.sh
+          sh ${{ github.action_path }}/helloworld.sh
+          shell: bash
+
