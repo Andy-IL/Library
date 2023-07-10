@@ -34,7 +34,7 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello, world from library YML! Inputs.username is:
-          echo ${{ $inputs.username }}
+          echo ${{ inputs.username }}
           echo token is 
           echo ${{ secrets.envPAT}}
 
