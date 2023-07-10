@@ -12,6 +12,6 @@ runs:
     - name : Run example in action.yaml
       run: |
         chmod 700 ${{ github.action_path }}/helloworld.sh
-        echo ${{ inputs.input_string }}
+        echo Action calling helloworld with: ${{ inputs.input_string }}
         sh  ${{ github.action_path }}/helloworld.sh "${{ inputs.input_string }}"
       shell: bash
